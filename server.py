@@ -20,6 +20,7 @@ def predict():
     #Yahan pr jo data aya tha usko menay model pr laga dia
     predictions = trained_model.make_predictions(prediction_dataframe)
     #Yahan pr menay result ko JSON main convert kiya aur jahan sy request ayi thi wapis return krdia
+    print(predictions)
     return jsonify({'predictions': list(predictions)})
 
 if __name__ == '__main__':
